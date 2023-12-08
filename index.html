@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <title>Соревнования по дилемме заключённого</title>
-    <link href="CSS/main.css" rel="stylesheet">
+    <link href="logo/logo.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="keywords" content="игра,развлечения,исследования,дилемма">
     <meta name="description" content="Доверишься ли ты другому человеку, чтобы увеличить выигрыш? 
@@ -11,25 +11,21 @@
   <body>
     <header>
       <img class="logo" src="images/logo.png" alt="Logo">
-      <h1 class="sitename">
+      <h1 class="site-title">
         Игра "Доверишься или обманешь?"
       </h1>
     </header>
     <main>
       <div class="user-profile">
-        <div class="user-profile-photo">
-          <p>
-            Здесь могла быть ваша реклама
-          </p>
-        </div>
-        <div class="user-profile-info">
-          <h6>
-            Этот чел использует тег <span class="html-tag">&lt;h6&gt;</span>
-          </h6>
+        <img class="photo user-profile__photo" src="images/mock_user_1_photo.jpg" alt="Mock user 1 photo">
+        <div class="user-profile__info">
+          <p>Hi, my name is Gloria Gonzales.</p>
+          <p>My email address is gloria.gonzales@example.com</p>
+          
         </div>
       </div>
       <div class="current-match">
-        <div class="current-match-main-info">
+        <div class="current-match__main-info">
           <h3>
             Идёт текущий матч. Не правда ли?
           </h3>
@@ -37,15 +33,15 @@
             Имя соперника <i>неизвестно</i>.
           </p>
         </div>
-        <div class="two-buttons">
-          <button class="button">
+        <div class="current-match__two-buttons">
+          <button class="current-match__cooperate-button">
               Довериться
           </button>
-          <button class="button">
+          <button class="current-match__betray-button">
               Не доверять
           </button>
         </div>
-        <div class="current-match-additional-info">
+        <div class="current-match__additional-info">
             <p>
               С другой стороны, тут тоже что-то должно быть
             </p>
@@ -53,8 +49,7 @@
       </div>
     </main>
     <footer>
-      <nav class="navigation">
-      </nav>
+      <nav class="navigation"></nav>
     </footer>
   </body>
 </html>
