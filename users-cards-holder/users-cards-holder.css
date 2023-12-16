@@ -1,0 +1,4 @@
+.users-cards-holder {
+    display: flex;
+    flex-direction: column;
+}
