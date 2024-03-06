@@ -1,0 +1,8 @@
+services:
+  node:
+    build: 
+      dockerfile: Dockerfile.prod
+    environment:
+      - PORT=${PORT}
+    ports:
+      - ${PORT}:${PORT}
