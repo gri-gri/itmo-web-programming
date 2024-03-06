@@ -1,8 +1,15 @@
 services:
-  node:
+  betrast-server:
     build: 
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile
+      target: production
     environment:
       - PORT=${PORT}
-    ports:
-      - ${PORT}:${PORT}
+    expose:
+      - ${PORT}
+    networks:
+      - server_common
+
+networks:
+  server_common:
+    external: true
