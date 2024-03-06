@@ -18,7 +18,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/personal-server-setup/server/itmo-web-programming
-            docker compose down
+            docker compose docker-compose.prod.yml -f down
             git checkout deploy
             git pull
             docker compose -f docker-compose.prod.yml up -d --build
